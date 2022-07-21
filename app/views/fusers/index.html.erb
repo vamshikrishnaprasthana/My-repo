@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fusers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Age</th>
+      <th>Mobile</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fusers.each do |fuser| %>
+      <tr>
+        <td><%= fuser.first_name %></td>
+        <td><%= fuser.last_name %></td>
+        <td><%= fuser.age %></td>
+        <td><%= fuser.mobile %></td>
+        <td><%= link_to 'Show', fuser %></td>
+        <td><%= link_to 'Edit', edit_fuser_path(fuser) %></td>
+        <td><%= link_to 'Destroy', fuser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fuser', new_fuser_path %>

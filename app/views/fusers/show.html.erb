@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @fuser.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @fuser.last_name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @fuser.age %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @fuser.mobile %>
+</p>
+
+<%= link_to 'Edit', edit_fuser_path(@fuser) %> |
+<%= link_to 'Back', fusers_path %>

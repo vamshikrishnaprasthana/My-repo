@@ -1,0 +1,2 @@
+class Sample < Laptop
+end
