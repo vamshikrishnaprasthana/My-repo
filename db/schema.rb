@@ -52,9 +52,6 @@ ActiveRecord::Schema.define(version: 2022_07_22_123127) do
 
   add_foreign_key "appointments", "Doctors"
   add_foreign_key "appointments", "Patients"
-  add_foreign_key "clocks", "Appointments"
-  add_foreign_key "clocks", "Doctors"
-  add_foreign_key "clocks", "Patients"
   add_foreign_key "medicines", "Doctors"
   add_foreign_key "medicines", "Patients"
   add_foreign_key "patients", "Doctors"
