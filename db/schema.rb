@@ -22,18 +22,6 @@ ActiveRecord::Schema.define(version: 2022_07_22_123127) do
     t.index ["Patient_id"], name: "index_appointments_on_Patient_id"
   end
 
-  create_table "clocks", force: :cascade do |t|
-    t.string "time"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "Doctor_id", null: false
-    t.integer "Patient_id", null: false
-    t.integer "Appointment_id", null: false
-    t.index ["Appointment_id"], name: "index_clocks_on_Appointment_id"
-    t.index ["Doctor_id"], name: "index_clocks_on_Doctor_id"
-    t.index ["Patient_id"], name: "index_clocks_on_Patient_id"
-  end
-
   create_table "doctors", force: :cascade do |t|
     t.string "name"
     t.string "available_time"
