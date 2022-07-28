@@ -7,7 +7,6 @@ class College
         student
     end
     private
-
     def student
         puts "hello i am student"
     end

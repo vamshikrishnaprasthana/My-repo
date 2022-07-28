@@ -26,4 +26,3 @@ end
 
 feb = Febinocci.new
 feb.no
-    

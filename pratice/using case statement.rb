@@ -1,7 +1,7 @@
 class Human
-  def self.
-$age =  5
-case $age
+  def self.rock
+age =  5
+case age
 when 0 .. 2
    puts "baby"
 when 3 .. 6
@@ -13,3 +13,6 @@ when 13 .. 18
 else
    puts "adult"
 end
+end
+end
+Human.rock
