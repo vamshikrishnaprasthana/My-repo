@@ -1,0 +1,13 @@
+<h1 style="color: purple">Houses#show</h1>
+<p style="color: green",id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @employee.name %>
+</p>
+
+
+
+
+<%= link_to 'Back', employees_path %>
+<%= link_to 'Destroy', employee_path(@employee),method: :destroy %>

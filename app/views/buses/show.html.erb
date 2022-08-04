@@ -1,0 +1,16 @@
+<h1>Buses#show</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bus.name %>
+</p>
+
+<p>
+  <strong>colour:</strong>
+  <%= @bus.colour%>
+</p>
+
+
+<%= link_to 'Back', buses_path %>
+<%= link_to 'Destroy', bus_path(@bus),method: :delete %>
